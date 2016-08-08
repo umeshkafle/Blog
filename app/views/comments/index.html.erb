@@ -1,0 +1,19 @@
+<h4>Comments</h4>
+
+<% @comments.each do |comment|%>
+	<div id="comments">
+		<div>
+			<strong>Name</strong>
+			<strong>Body</strong>
+		</div>
+
+		<div>
+			<%= comment.name%>
+			<%= comment.body%>
+		</div>
+	</div>
+	
+<%end%>
+	<div>
+		<%= render "form"%>
+	</div>

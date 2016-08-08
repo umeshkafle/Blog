@@ -1,0 +1,17 @@
+<%= form_for :post, url:{ :action => "create"} do |f|%>
+
+<p>
+	<%= f.label :Title%>
+	<%= f.text_field :title%>
+</p>
+
+<p>
+	<%= f.label :Content%>
+	<%= f.text_area :content%>
+</p>
+
+<p>
+<%= submit_tag ("Add Post")%>
+</p>
+
+<%end%>
